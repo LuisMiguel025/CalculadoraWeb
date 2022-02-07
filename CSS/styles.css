@@ -1,0 +1,81 @@
+
+
+
+body{
+    background-color: darkcyan;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Georana', sans-serif;
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1xp solid gray;
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+    background-color: white;
+
+}
+
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid rgb(0, 0, 0);
+}
+
+.keypad-button:hover{
+    filter: brightness(80%);
+    transition: filter .25s;
+
+}
+
+.keypad-button.yellow{
+    background-color: rgb(233, 134, 20);
+}
+
+.keypad-button.largue{
+    width: 50%;
+}
+.keypad-button.dark{
+    background-color: lightgray;
+}
